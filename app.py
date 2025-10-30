@@ -4,7 +4,7 @@ movies = open("./movies.json", encoding="utf8")
 ## create variable "data" that represents the enitre movie list
 data = json.load(movies)
 
-#File One
+"""#File One
 for index, item in enumerate(data):
     print(f"{index}:{item["title"]}")
 
@@ -29,7 +29,17 @@ for index, item in enumerate(data):
         print(f"{index}:{item["title"]}, {item["year"]}")
 
 
-#File Four
+#File 4
+z= int(input("Same Year")) 
+for index, item in enumerate(data):
+    if item["year"] == z :
+        print(f"{index}:{item["title"]}, {item["year"]}")"""
+
+#File 5
+r = int(input("Pick a Movie")) 
+for index, item in enumerate(data):
+    if item["title"] == r :
+        print(f"{index}:{item["title"]}")
 
 
 
