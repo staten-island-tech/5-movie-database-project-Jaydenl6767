@@ -33,13 +33,20 @@ for index, item in enumerate(data):
 z= int(input("Same Year")) 
 for index, item in enumerate(data):
     if item["year"] == z :
-        print(f"{index}:{item["title"]}, {item["year"]}")"""
+        print(f"{index}:{item["title"]}, {item["year"]}")
 
 #File 5
-r = int(input("Pick a Movie")) 
+t = input("Type in a Movie") 
 for index, item in enumerate(data):
-    if item["title"] == r :
+    if item["title"] == t :
+        print(f"{index}:{item["title"]}")"""
+
+#File 6
+g = input("Type in a Genre") 
+for index, item in enumerate(data):
+    if item["genres,"] == g :
         print(f"{index}:{item["title"]}")
 
+ 
 
 
